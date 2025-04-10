@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipal Transport Master Plan | Prinesh Maharjan</title>
+  <meta name="description" content="Transport planning project by Prinesh Maharjan, Civil Engineer">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Project-specific styles */
+    .project-header {
+      background: linear-gradient(135deg, var(--darker), var(--dark));
+      padding: 6rem 0 3rem;
+    }
+    .project-image.main-image {
+      height: 400px;
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation (Same as main site) -->
+  <header class="header" data-aos="fade-down">
+    <div class="container">
+      <nav class="nav">
+        <a href="../index.html" class="logo">Prinesh</a>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html#home" class="nav-link">Home</a>
+          <a href="../index.html#projects" class="nav-link">Projects</a>
+          <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project Header -->
+  <section class="project-header">
+    <div class="container">
+      <h1 class="section-title" data-aos="fade-up">Municipal Transport Master Plan</h1>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+        Sustainable transport solutions for Suryabinayak, Pathari Shanishchare, Surunga & Dharmadevi Municipalities
+      </p>
+      <div class="project-meta" data-aos="fade-up" data-aos-delay="200">
+        <span class="meta-item">Client: Various Municipalities</span>
+        <span class="meta-item">Year: 2022-2023</span>
+        <span class="meta-item">Role: GIS Specialist</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="project-content">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2 class="section-title1">Project Overview</h2>
+        <p>
+          Developed comprehensive transport master plans for four municipalities, integrating GIS-based spatial analysis, 
+          drone surveys, and community consultations to create future-ready urban mobility solutions.
+        </p>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="project-gallery" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image main-image">
+          <img src="../assets/projects/transport-plan.jpg" alt="Transport network mapping" loading="lazy">
+        </div>
+        <div class="project-image">
+          <img src="../assets/projects/road-survey.jpg" alt="Field survey work" loading="lazy">
+        </div>
+        <div class="project-image">
+          <img src="../assets/projects/gis-analysis.jpg" alt="GIS data analysis" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Key Contributions -->
+      <div data-aos="fade-up">
+        <h2 class="section-title1">Key Contributions</h2>
+        <ul class="experience-list">
+          <li>Conducted drone + DGPS surveys for 200+ km of roads</li>
+          <li>Prepared thematic maps (land use, traffic flow, road conditions)</li>
+          <li>Developed 10-year prioritized infrastructure plans</li>
+        </ul>
+      </div>
+
+      <!-- Back Button -->
+      <div class="back-to-projects" data-aos="fade-up">
+        <a href="../index.html#projects" class="btn btn-primary btn-icon">
+          <i data-lucide="arrow-left"></i> Back to Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; <span id="current-year"></span> Prinesh Maharjan</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+      lucide.createIcons();
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Prinesh Maharjan</title>
+  <meta name="description" content="Detailed view of project by Prinesh Maharjan, Civil Engineer and GIS Specialist">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Additional styles for project details page */
+    .project-header {
+      padding: 6rem 0 3rem;
+      background: linear-gradient(135deg, var(--darker), var(--dark));
+    }
+    
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .meta-item {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    .project-content {
+      padding: 4rem 0;
+    }
+    
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    
+    .project-image {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      height: 250px;
+    }
+    
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .project-image:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .project-image:hover img {
+      transform: scale(1.05);
+    }
+    
+    .project-features {
+      margin: 3rem 0;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .feature-card {
+      background-color: var(--darker);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--zinc-800);
+    }
+    
+    .feature-card h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .back-to-projects {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    
+    @media (min-width: 768px) {
+      .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .project-image.main-image {
+        grid-column: span 2;
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" data-aos="fade-down">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">Prinesh</a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="index.html#resume" class="nav-link">Resume</a>
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#projects" class="nav-link">Projects</a>
+          <a href="index.html#Testimonials" class="nav-link">Testimonials</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project Header -->
+  <section class="project-header">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h1 class="section-title" id="project-title">Municipal Transport Master Plan</h1>
+        <div class="section-divider"></div>
+        <p class="section-description" id="project-subtitle">
+          Comprehensive transport planning for sustainable urban development
+        </p>
+      </div>
+      
+      <div class="project-meta" data-aos="fade-up" data-aos-delay="100">
+        <span class="meta-item">Client: Suryabinayak Municipality, Surunga Municipality, Pathari Shanishchare Municipality, Dharmadevi Municipality</span>
+        <span class="meta-item">Year: 2022-2023</span>
+        <span class="meta-item">Category: Urban Planning</span>
+        <span class="meta-item">Role: GIS Specialist</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <section class="project-content">
+    <div class="container">
+      <div class="project-overview" data-aos="fade-up">
+        <h2 class="section-title1">Project Overview</h2>
+        <p>
+          The Municipal Transport Master Plan project involved developing comprehensive transport strategies for multiple municipalities in Nepal, 
+          including Suryabinayak Municipality, Pathari Shanishchare Municipality, Surunga Municipality, and Dharmadevi Municipality. 
+          The goal was to create sustainable, efficient, and future-ready transport systems that would serve the growing urban populations.
+        </p>
+        <p>
+          As part of the consulting team, I was responsible for conducting road inventory surveys, spatial analysis using GIS tools, 
+          and preparing thematic maps that formed the basis for the transport planning decisions.
+        </p>
+      </div>
+      
+      <div class="project-gallery" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image main-image">
+          <img src="assets/projects/transport-plan.jpg" alt="Transport Master Plan Overview" loading="lazy">
+        </div>
+        <div class="project-image">
+          <img src="assets/projects/road-survey.jpg" alt="Road Survey Work" loading="lazy">
+        </div>
+        <div class="project-image">
+          <img src="assets/projects/gis-analysis.jpg" alt="GIS Analysis" loading="lazy">
+        </div>
+      </div>
+      
+      <div class="project-challenges" data-aos="fade-up">
+        <h2 class="section-title1">Challenges & Solutions</h2>
+        <p>
+          The project faced several challenges including limited existing data, rapidly changing urban landscapes, 
+          and the need to balance development with environmental concerns. Our team addressed these through:
+        </p>
+        
+        <div class="project-features">
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4>Data Collection</h4>
+              <p>Conducted extensive field surveys using DGPS and drone technology to gather accurate spatial data where existing records were insufficient.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Stakeholder Engagement</h4>
+              <p>Organized ward-level consultations to understand local needs and incorporate community feedback into planning.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Sustainable Design</h4>
+              <p>Prioritized non-motorized transport infrastructure and green corridors to reduce environmental impact.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Technology Integration</h4>
+              <p>Used advanced GIS analysis to model traffic flows and identify optimal routes and infrastructure needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-outcomes" data-aos="fade-up">
+        <h2 class="section-title1">Project Outcomes</h2>
+        <p>
+          The completed Municipal Transport Master Plans provided each municipality with:
+        </p>
+        <ul class="experience-list">
+          <li>A 10-year roadmap for transport infrastructure development</li>
+          <li>Detailed GIS databases of existing road networks and conditions</li>
+          <li>Prioritized lists of infrastructure projects with cost estimates</li>
+          <li>Policy recommendations for sustainable transport management</li>
+          <li>Public engagement strategies for implementation</li>
+        </ul>
+        
+        <div class="project-gallery" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="assets/projects/transport-map.jpg" alt="Transport Network Map" loading="lazy">
+          </div>
+          <div class="project-image">
+            <img src="assets/projects/presentation.jpg" alt="Plan Presentation" loading="lazy">
+          </div>
+        </div>
+      </div>
+      
+      <div class="back-to-projects" data-aos="fade-up">
+        <a href="index.html#projects" class="btn btn-primary btn-icon">
+          <i data-lucide="arrow-left"></i>
+          Back to Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="container">
+      <p class="footer-text">
+        &copy; <span id="current-year"></span> Prinesh Maharjan. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+      
+      // Initialize Lucide icons
+      lucide.createIcons();
+      
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Get project details from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('id');
+      
+      // Load project data based on ID
+      loadProjectData(projectId);
+    });
+    
+    // Project data - you can expand this with all your projects
+    const projects = {
+      'transport-plan': {
+        title: 'Municipal Transport Master Plan',
+        subtitle: 'Comprehensive transport planning for sustainable urban development',
+        client: 'Various Municipalities',
+        year: '2022-2023',
+        category: 'Urban Planning',
+        role: 'GIS Specialist'
+      },
+      'urban-gis': {
+        title: 'Urban GIS Database Development',
+        subtitle: 'Creating comprehensive spatial databases for urban planning',
+        client: 'Multiple Clients',
+        year: '2021-2023',
+        category: 'GIS Development',
+        role: 'GIS Analyst'
+      },
+      'structural-analysis': {
+        title: 'Structural Analysis for Residential Complexes',
+        subtitle: 'Engineering design for safe and efficient residential buildings',
+        client: 'Private Developers',
+        year: '2022-2023',
+        category: 'Structural Engineering',
+        role: 'Structural Engineer'
+      },
+      'drone-survey': {
+        title: 'Drone Survey and Mapping',
+        subtitle: 'High-resolution aerial data collection for engineering projects',
+        client: 'Various Clients',
+        year: '2021-2023',
+        category: 'Surveying',
+        role: 'Drone Pilot & Surveyor'
+      }
+    };
+    
+    function loadProjectData(projectId) {
+      const project = projects[projectId] || projects['transport-plan'];
+      
+      // Update page content
+      document.getElementById('project-title').textContent = project.title;
+      document.getElementById('project-subtitle').textContent = project.subtitle;
+      
+      // Update meta items
+      const metaItems = document.querySelectorAll('.meta-item');
+      metaItems[0].textContent = `Client: ${project.client}`;
+      metaItems[1].textContent = `Year: ${project.year}`;
+      metaItems[2].textContent = `Category: ${project.category}`;
+      metaItems[3].textContent = `Role: ${project.role}`;
+      
+      // Update page title
+      document.title = `${project.title} | Prinesh Maharjan`;
+      
+      // You can add more specific content updates based on project ID
+      // For example, loading different images or text for each project
+    }
+  </script>
+</body>
+</html>
